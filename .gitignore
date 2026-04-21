@@ -1,10 +1,47 @@
-HELP.md
+############################
+# 🧱 Maven / Build
+############################
 target/
-!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+############################
+# ☕ Java
+############################
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+############################
+# 🧪 Test / Reports
+############################
+/reports/
+/test-output/
+
+############################
+# 🖥️ OS (Mac / Windows / Linux)
+############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+############################
+# 💻 IDEs
+############################
+
+### IntelliJ ###
+.idea/
+*.iml
+*.ipr
+*.iws
+
+### VS Code ###
+.vscode/
+
+### Eclipse / STS ###
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +50,26 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+############################
+# 🔐 Env / Secrets
+############################
+.env
+.env.*
+*.key
+*.pem
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+############################
+# 📦 Logs
+############################
+logs/
+*.log
 
-### VS Code ###
-.vscode/
+############################
+# 🐳 Docker
+############################
+docker-compose.override.yml
+
+############################
+# 🔧 Misc
+############################
+HELP.md
